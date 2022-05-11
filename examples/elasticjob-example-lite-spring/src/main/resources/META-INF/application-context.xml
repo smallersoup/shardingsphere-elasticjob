@@ -31,7 +31,7 @@
     <context:property-placeholder location="classpath:conf/*.properties"/>
     
     <elasticjob:zookeeper id="regCenter" server-lists="${serverLists}" namespace="${namespace}"
-                          base-sleep-time-milliseconds="${baseSleepTimeMilliseconds}"
+                          base-sleep-time-milliseconds="${baseSleepTimeMilliseconds}" ensemble-tracker="${ensembleTracker}"
                           max-sleep-time-milliseconds="${maxSleepTimeMilliseconds}" max-retries="${maxRetries}" />
     
     <elasticjob:snapshot id="jobSnapshot" registry-center-ref="regCenter" dump-port="9999" />

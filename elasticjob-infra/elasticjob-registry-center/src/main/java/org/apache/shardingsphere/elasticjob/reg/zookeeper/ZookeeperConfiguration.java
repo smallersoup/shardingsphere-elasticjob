@@ -44,7 +44,12 @@ public final class ZookeeperConfiguration {
      * Namespace.
      */
     private final String namespace;
-    
+
+    /**
+     * Allows to configure if the ensemble configuration changes will be watched. The default value is true.
+     */
+    private boolean ensembleTracker = true;
+
     /**
      * Base sleep time milliseconds. 
      */

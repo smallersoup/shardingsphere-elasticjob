@@ -30,6 +30,7 @@ public final class ZookeeperPropertiesTest {
         ZookeeperProperties properties = new ZookeeperProperties();
         properties.setServerLists("localhost:18181");
         properties.setNamespace("test");
+        properties.setEnsembleTracker(true);
         properties.setBaseSleepTimeMilliseconds(2000);
         properties.setMaxSleepTimeMilliseconds(4000);
         properties.setMaxRetries(5);
@@ -39,6 +40,7 @@ public final class ZookeeperPropertiesTest {
         ZookeeperConfiguration actual = properties.toZookeeperConfiguration();
         assertThat(actual.getServerLists(), is(properties.getServerLists()));
         assertThat(actual.getNamespace(), is(properties.getNamespace()));
+        assertThat(actual.isEnsembleTracker(), is(properties.isEnsembleTracker()));
         assertThat(actual.getBaseSleepTimeMilliseconds(), is(properties.getBaseSleepTimeMilliseconds()));
         assertThat(actual.getMaxSleepTimeMilliseconds(), is(properties.getMaxSleepTimeMilliseconds()));
         assertThat(actual.getMaxRetries(), is(properties.getMaxRetries()));

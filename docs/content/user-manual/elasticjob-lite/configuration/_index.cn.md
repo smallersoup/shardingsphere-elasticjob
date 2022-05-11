@@ -19,11 +19,12 @@ ElasticJob-Lite 提供了 3 种配置方式，用于不同的使用场景。
 | ----------------------------- |:-------- |:------- |:-------------------------- |
 | serverLists                   | String   |         | 连接 ZooKeeper 服务器的列表  |
 | namespace                     | String   |         | ZooKeeper 的命名空间        |
+| ensembleTracker               | boolean  | true    | 允许配置，是否集成配置的变化将被监视 |
 | baseSleepTimeMilliseconds     | int      | 1000    | 等待重试的间隔时间的初始毫秒数 |
 | maxSleepTimeMilliseconds      | String   | 3000    | 等待重试的间隔时间的最大毫秒数 |
 | maxRetries                    | String   | 3       | 最大重试次数                 |
-| sessionTimeoutMilliseconds    | boolean  | 60000   | 会话超时毫秒数               |
-| connectionTimeoutMilliseconds | boolean  | 15000   | 连接超时毫秒数               |
+| sessionTimeoutMilliseconds    | int      | 60000   | 会话超时毫秒数               |
+| connectionTimeoutMilliseconds | int      | 15000   | 连接超时毫秒数               |
 | digest                        | String   | 无需验证 | 连接 ZooKeeper 的权限令牌    |
 
 ### 核心配置项说明

@@ -71,6 +71,7 @@ public final class ZookeeperRegistryCenter implements CoordinatorRegistryCenter 
         log.debug("Elastic job: zookeeper registry center init, server lists is: {}.", zkConfig.getServerLists());
         CuratorFrameworkFactory.Builder builder = CuratorFrameworkFactory.builder()
                 .connectString(zkConfig.getServerLists())
+                .ensembleTracker(zkConfig.isEnsembleTracker())
                 .retryPolicy(new ExponentialBackoffRetry(zkConfig.getBaseSleepTimeMilliseconds(), zkConfig.getMaxRetries(), zkConfig.getMaxSleepTimeMilliseconds()))
                 .namespace(zkConfig.getNamespace());
         if (0 != zkConfig.getSessionTimeoutMilliseconds()) {

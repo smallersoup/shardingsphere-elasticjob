@@ -45,6 +45,7 @@ public final class ZookeeperBeanDefinitionParser extends AbstractBeanDefinitionP
         BeanDefinitionBuilder configuration = BeanDefinitionBuilder.rootBeanDefinition(ZookeeperConfiguration.class);
         configuration.addConstructorArgValue(element.getAttribute(ZookeeperBeanDefinitionTag.SERVER_LISTS_ATTRIBUTE));
         configuration.addConstructorArgValue(element.getAttribute(ZookeeperBeanDefinitionTag.NAMESPACE_ATTRIBUTE));
+        addPropertyValueIfNotEmpty(ZookeeperBeanDefinitionTag.ENSEMBLE_TRACKER_ATTRIBUTE, "ensembleTracker", element, configuration);
         addPropertyValueIfNotEmpty(ZookeeperBeanDefinitionTag.BASE_SLEEP_TIME_MILLISECONDS_ATTRIBUTE, "baseSleepTimeMilliseconds", element, configuration);
         addPropertyValueIfNotEmpty(ZookeeperBeanDefinitionTag.MAX_SLEEP_TIME_MILLISECONDS_ATTRIBUTE, "maxSleepTimeMilliseconds", element, configuration);
         addPropertyValueIfNotEmpty(ZookeeperBeanDefinitionTag.MAX_RETRIES_ATTRIBUTE, "maxRetries", element, configuration);

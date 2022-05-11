@@ -19,6 +19,7 @@ ElasticJob-Lite has provided 3 kinds of configuration methods for different situ
 | ----------------------------- |:------------- |:------------- |:-------------------------------------------------------- |
 | serverLists                   | String        |               | ZooKeeper server IP list                                 |
 | namespace                     | String        |               | ZooKeeper namespace                                      |
+| ensembleTracker               | boolean       | true          | Allows to configure if the ensemble configuration changes will be watched |
 | baseSleepTimeMilliseconds     | int           | 1000          | The initial value of milliseconds for the retry interval |
 | maxSleepTimeMilliseconds      | String        | 3000          | The maximum value of milliseconds for the retry interval |
 | maxRetries                    | String        | 3             | Maximum number of retries                                |

@@ -363,6 +363,7 @@
 1. [ISSUE #84](https://github.com/elasticjob/elastic-job/issues/84) The console provides job enable/disable button action
 1. [ISSUE #87](https://github.com/elasticjob/elastic-job/issues/87) Adjusting the master node election process, job shutdown, disabling and pausing will trigger the master node election
 1. [ISSUE #93](https://github.com/elasticjob/elastic-job/issues/93) The registry configuration provides default values for baseSleepTimeMilliseconds, maxSleepTimeMilliseconds, and maxRetries
+1. [ISSUE #2072](https://github.com/apache/shardingsphere-elasticjob/issues/2072) Allows to configure if the ensemble configuration changes will be watched. The default value is true
 
 ### Bug Fixes
 

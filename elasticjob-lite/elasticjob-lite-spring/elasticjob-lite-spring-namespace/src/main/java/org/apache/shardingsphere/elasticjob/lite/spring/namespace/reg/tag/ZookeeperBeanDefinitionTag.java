@@ -29,6 +29,8 @@ public final class ZookeeperBeanDefinitionTag {
     public static final String SERVER_LISTS_ATTRIBUTE = "server-lists";
     
     public static final String NAMESPACE_ATTRIBUTE = "namespace";
+
+    public static final String ENSEMBLE_TRACKER_ATTRIBUTE = "ensemble-tracker";
     
     public static final String BASE_SLEEP_TIME_MILLISECONDS_ATTRIBUTE = "base-sleep-time-milliseconds";
     

@@ -42,6 +42,11 @@ public class ZookeeperProperties {
      * Namespace.
      */
     private String namespace;
+
+    /**
+     * Allows to configure if the ensemble configuration changes will be watched. The default value is true.
+     */
+    private boolean ensembleTracker = true;
     
     /**
      * Base sleep time milliseconds.
@@ -80,6 +85,7 @@ public class ZookeeperProperties {
      */
     public ZookeeperConfiguration toZookeeperConfiguration() {
         ZookeeperConfiguration result = new ZookeeperConfiguration(serverLists, namespace);
+        result.setEnsembleTracker(ensembleTracker);
         result.setBaseSleepTimeMilliseconds(baseSleepTimeMilliseconds);
         result.setMaxSleepTimeMilliseconds(maxSleepTimeMilliseconds);
         result.setMaxRetries(maxRetries);

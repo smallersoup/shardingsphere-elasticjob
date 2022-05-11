@@ -16,6 +16,7 @@ chapter = true
 | ----------------------------- |:--------- |
 | serverLists                   | 是        |
 | namespace                     | 是        |
+| ensembleTracker               | 否        |
 | baseSleepTimeMilliseconds     | 否        |
 | maxSleepTimeMilliseconds      | 否        |
 | maxRetries                    | 否        |

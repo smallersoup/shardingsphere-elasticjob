@@ -16,6 +16,7 @@ Configuration:
 | ----------------------------- |:--------------------- |
 | serverLists                   | Yes                   |
 | namespace                     | Yes                   |
+| ensembleTracker               | No                    |
 | baseSleepTimeMilliseconds     | No                    |
 | maxSleepTimeMilliseconds      | No                    |
 | maxRetries                    | No                    |
