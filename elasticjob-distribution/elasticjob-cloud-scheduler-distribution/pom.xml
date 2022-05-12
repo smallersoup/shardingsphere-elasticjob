@@ -21,7 +21,7 @@
     <parent>
         <groupId>org.apache.shardingsphere.elasticjob</groupId>
         <artifactId>elasticjob-distribution</artifactId>
-        <version>3.0.0-arch</version>
+        <version>3.0.0-xdf-0.0.1</version>
     </parent>
     <artifactId>elasticjob-cloud-scheduler-distribution</artifactId>
     <packaging>pom</packaging>
@@ -31,27 +31,27 @@
         <dependency>
             <groupId>org.apache.shardingsphere.elasticjob</groupId>
             <artifactId>elasticjob-infra-common</artifactId>
-            <version>${project.version}</version>
+            <version>3.0.0-xdf-0.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.shardingsphere.elasticjob</groupId>
             <artifactId>elasticjob-simple-executor</artifactId>
-            <version>${project.version}</version>
+            <version>3.0.0-xdf-0.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.shardingsphere.elasticjob</groupId>
             <artifactId>elasticjob-dataflow-executor</artifactId>
-            <version>${project.version}</version>
+            <version>3.0.0-xdf-0.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.shardingsphere.elasticjob</groupId>
             <artifactId>elasticjob-script-executor</artifactId>
-            <version>${project.version}</version>
+            <version>3.0.0-xdf-0.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.shardingsphere.elasticjob</groupId>
             <artifactId>elasticjob-cloud-common</artifactId>
-            <version>${project.version}</version>
+            <version>3.0.0-xdf-0.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.shardingsphere.elasticjob</groupId>
@@ -176,7 +176,7 @@
                         </executions>
                         <configuration>
                             <repository>apache/shardingsphere-elasticjob-cloud-scheduler</repository>
-                            <tag>${project.version}</tag>
+                            <tag>3.0.0-xdf-0.0.1</tag>
                             <buildArgs>
                                 <APP_NAME>${project.build.finalName}-cloud-scheduler-bin</APP_NAME>
                             </buildArgs>
