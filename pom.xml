@@ -25,7 +25,7 @@
     </parent>
     <groupId>org.apache.shardingsphere.elasticjob</groupId>
     <artifactId>elasticjob</artifactId>
-    <version>3.0.0</version>
+    <version>3.0.0-arch</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     
@@ -103,6 +103,20 @@
 
         <javadocExecutable>${java.home}/../bin/javadoc</javadocExecutable>
     </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>xdf-releases</id>
+            <name>Releases</name>
+            <url>http://nexus.staff.xdf.cn/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>xdf-snapshot</id>
+            <name>Snapshots</name>
+            <url>http://nexus.staff.xdf.cn/repository/maven-snapshots/</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
     
     <dependencyManagement>
         <dependencies>
