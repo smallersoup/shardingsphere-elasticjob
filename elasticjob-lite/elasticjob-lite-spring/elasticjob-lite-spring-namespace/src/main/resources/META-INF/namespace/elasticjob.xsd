@@ -63,7 +63,7 @@
                 <xsd:extension base="beans:identifiedType">
                     <xsd:attribute name="server-lists" type="xsd:string" use="required" />
                     <xsd:attribute name="namespace" type="xsd:string" use="required" />
-                    <xsd:attribute name="ensemble-tracker" type="xsd:boolean" />
+                    <xsd:attribute name="ensemble-tracker" type="xsd:string" />
                     <xsd:attribute name="base-sleep-time-milliseconds" type="xsd:string" />
                     <xsd:attribute name="max-sleep-time-milliseconds" type="xsd:string" />
                     <xsd:attribute name="max-retries" type="xsd:string" />
