@@ -20,7 +20,7 @@ Through the way of DI (Dependency Injection), developers can easily use data sou
                         http://shardingsphere.apache.org/schema/elasticjob/elasticjob.xsd
                         ">
     <!-- Configure registry center for job -->
-    <elasticjob:zookeeper id="regCenter" server-lists="yourhost:2181" namespace="my-job" base-sleep-time-milliseconds="1000" max-sleep-time-milliseconds="3000" max-retries="3" />
+    <elasticjob:zookeeper id="regCenter" server-lists="yourhost:2181" namespace="my-job" base-sleep-time-milliseconds="1000" max-sleep-time-milliseconds="3000" max-retries="3" ensemble-tracker="true"/>
     
     <!-- Configure job java bean -->
     <bean id="myJob" class="xxx.MyJob">
@@ -86,7 +86,7 @@ The example below is how to configure SnapshotService for open listener port to 
                            http://shardingsphere.apache.org/schema/elasticjob/elasticjob.xsd
                          ">
     <!--Create registry center -->
-    <elasticjob:zookeeper id="regCenter" server-lists="yourhost:2181" namespace="dd-job" base-sleep-time-milliseconds="1000" max-sleep-time-milliseconds="3000" max-retries="3" />
+    <elasticjob:zookeeper id="regCenter" server-lists="yourhost:2181" namespace="dd-job" base-sleep-time-milliseconds="1000" max-sleep-time-milliseconds="3000" max-retries="3" ensemble-tracker="true"/>
     
     <!--Configure the task snapshot export service -->
     <elasticjob:snapshot id="jobSnapshot" registry-center-ref="regCenter" dump-port="9999" />    

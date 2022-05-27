@@ -20,7 +20,7 @@ ElasticJob-Lite 提供自定义的 Spring 命名空间，可以与 Spring 容器
                         http://shardingsphere.apache.org/schema/elasticjob/elasticjob.xsd
                         ">
     <!--配置作业注册中心 -->
-    <elasticjob:zookeeper id="regCenter" server-lists="yourhost:2181" namespace="my-job" base-sleep-time-milliseconds="1000" max-sleep-time-milliseconds="3000" max-retries="3" />
+    <elasticjob:zookeeper id="regCenter" server-lists="yourhost:2181" namespace="my-job" base-sleep-time-milliseconds="1000" max-sleep-time-milliseconds="3000" max-retries="3" ensemble-tracker="true"/>
     
     <!-- 配置作业 Bean -->
     <bean id="myJob" class="xxx.MyJob">
@@ -85,7 +85,7 @@ public final class SpringMain {
                            http://shardingsphere.apache.org/schema/elasticjob/elasticjob.xsd
                          ">
     <!--配置作业注册中心 -->
-    <elasticjob:zookeeper id="regCenter" server-lists="yourhost:2181" namespace="dd-job" base-sleep-time-milliseconds="1000" max-sleep-time-milliseconds="3000" max-retries="3" />
+    <elasticjob:zookeeper id="regCenter" server-lists="yourhost:2181" namespace="dd-job" base-sleep-time-milliseconds="1000" max-sleep-time-milliseconds="3000" max-retries="3" ensemble-tracker="true"/>
     
     <!--配置任务快照导出服务 -->
     <elasticjob:snapshot id="jobSnapshot" registry-center-ref="regCenter" dump-port="9999" />    

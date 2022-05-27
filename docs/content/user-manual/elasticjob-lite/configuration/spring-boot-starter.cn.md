@@ -17,6 +17,7 @@ chapter = true
 | base-sleep-time-milliseconds    | 否       |
 | max-sleep-time-milliseconds     | 否       |
 | max-retries                     | 否       |
+| ensemble-tracker                | 否       |
 | session-timeout-milliseconds    | 否       |
 | connection-timeout-milliseconds | 否       |
 | digest                          | 否       |

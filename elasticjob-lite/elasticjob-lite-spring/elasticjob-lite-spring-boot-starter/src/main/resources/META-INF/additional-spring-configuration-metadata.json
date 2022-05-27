@@ -66,6 +66,13 @@
       "sourceType": "org.apache.shardingsphere.elasticjob.lite.spring.boot.reg.ZookeeperProperties"
     },
     {
+      "name": "elasticjob.reg-center.ensemble-tracker",
+      "type": "java.lang.Boolean",
+      "defaultValue": true,
+      "description": "Allows to configure if the ensemble configuration changes will be watched.",
+      "sourceType": "org.apache.shardingsphere.elasticjob.lite.spring.boot.reg.ZookeeperProperties"
+    },
+    {
       "name": "elasticjob.reg-center.session-timeout-milliseconds",
       "type": "java.lang.Integer",
       "description": "Session timeout milliseconds.",

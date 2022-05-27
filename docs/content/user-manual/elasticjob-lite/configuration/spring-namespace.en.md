@@ -30,6 +30,7 @@ Configuration:
 | base-sleep-time-milliseconds    | No       |
 | max-sleep-time-milliseconds     | No       |
 | max-retries                     | No       |
+| ensemble-tracker                | No       |
 | session-timeout-milliseconds    | No       |
 | connection-timeout-milliseconds | No       |
 | digest                          | No       |

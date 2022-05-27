@@ -30,7 +30,7 @@
     <context:property-placeholder location="classpath:conf/job/conf.properties" />
     
     <elasticjob:zookeeper id="regCenter" server-lists="${regCenter.serverLists}" namespace="${regCenter.namespace}" base-sleep-time-milliseconds="${regCenter.baseSleepTimeMilliseconds}" 
-                   max-sleep-time-milliseconds="${regCenter.maxSleepTimeMilliseconds}" max-retries="${regCenter.maxRetries}" />
+                   max-sleep-time-milliseconds="${regCenter.maxSleepTimeMilliseconds}" max-retries="${regCenter.maxRetries}" ensemble-tracker="${regCenter.ensembleTracker}"/>
     
     <bean id="elasticJobTracingDataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="org.h2.Driver" />

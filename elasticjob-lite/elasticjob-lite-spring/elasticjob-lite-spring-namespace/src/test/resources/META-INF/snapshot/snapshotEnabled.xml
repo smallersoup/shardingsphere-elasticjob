@@ -32,7 +32,7 @@
     <elasticjob:zookeeper id="regCenter" server-lists="${regCenter.serverLists}" namespace="${regCenter.namespace}"
                           base-sleep-time-milliseconds="${regCenter.baseSleepTimeMilliseconds}"
                           max-sleep-time-milliseconds="${regCenter.maxSleepTimeMilliseconds}"
-                          max-retries="${regCenter.maxRetries}" />
+                          max-retries="${regCenter.maxRetries}" ensemble-tracker="${regCenter.ensembleTracker}"/>
     
     <elasticjob:snapshot id="jobSnapshotEnabled" registry-center-ref="regCenter" dump-port="9988" />
 </beans>
